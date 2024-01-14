@@ -168,38 +168,39 @@ $$
 
 1. \(e^{ix}\) のマクローリン展開:
 
-   $$
-   e^{ix} = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!} + \cdots
-   $$
+$$
+e^{ix} = 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!} + \cdots
+$$
 
 2. \(ix\) を整理していくと:
 
-   $$
-   e^{ix} = 1 + ix - \frac{x^2}{2!} - i\frac{x^3}{3!} + \frac{x^4}{4!} + \cdots
-   $$
+$$
+e^{ix} = 1 + ix - \frac{x^2}{2!} - i\frac{x^3}{3!} + \frac{x^4}{4!} + \cdots
+$$
 
 3. ここで\(\sin x\) のマクローリン展開は...:
 
-   $$
-   \sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots
-   $$
+$$
+\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots
+$$
 
    \(\cos x\) のマクローリン展開は...:
 
-   $$
-   \cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots
-   $$
+$$
+\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdots
+$$
 
 4. これを比較して用いて 2.を実部と虚部に分けると:
 
-   $$
-   e^{ix} = \cos x + i\sin x
-   $$
+$$
+e^{ix} = \cos x + i\sin x
+$$
 
 5. よって、オイラーの等式が得られる:
-   $$
-   e^{ix} = \cos x + i\sin x
-   $$
+
+$$
+e^{ix} = \cos x + i\sin x
+$$
 
 ### フーリエ変換（Fourier Transform）
 
