@@ -1,5 +1,3 @@
-# フーリエ変換とは？
-
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 <script type="text/x-mathjax-config">
@@ -10,6 +8,8 @@
  }
  });
 </script>
+
+# フーリエ変換とは？
 
 ## 概要
 
@@ -36,19 +36,13 @@
 **正弦波の式**
 <div>**正弦波の式**</div>
 
-$$ **正弦波の式** $$
-$ **正弦波の式** $
+<div align="center">これも中央寄せされたテキストです。</div>
 
-$$
-y(t) = A \sin(\omega t + \phi)
-$$
-
-- $ (y(t)\ $ は時刻 \(t\) における振幅
-- $ A $ は振幅（波の最大変位）
-- $ \omega\ $ は角周波数（単位時間あたりの角度の変化量。これは周期 \(T\) に対して \(\omega = \frac{2\pi}{T}\) と表される）
-- $(t\) $ は時間
-- $$ \phi $$ は初期位相（波の初期の位置）
-- $ \phi $ は初期位相（波の初期の位置）
+- $ \(y(t)\) $ は時刻 \(t\) における振幅
+- $\(A\)$ は振幅（波の最大変位）
+- \(\omega\) は角周波数（単位時間あたりの角度の変化量。これは周期 \(T\) に対して \(\omega = \frac{2\pi}{T}\) と表される）
+- $\(t\)$ は時間
+- $ \(\phi\)$ は初期位相（波の初期の位置）
 
 この式の振幅 \(A\)、角周波数 \(\omega\)、初期位相 \(\phi\) を調整することで様々な正弦波が表現できます。正弦波は周期信号とも取れます。
 
