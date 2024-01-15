@@ -33,7 +33,7 @@
 
 正弦波は以下の式で表されます。
 
-**<div align="center">正弦波の式</div>**
+<div align="center">正弦波の式</div>
 
 $$
 y(t) = A \sin(\omega t + \phi)
