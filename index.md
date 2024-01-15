@@ -1,8 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
   </script>
   <script type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'] ], displayMath: [ ['$$','$$'], ["\\[","\\]"] ] } }); </script>
 </head>
+</html>
 
 # フーリエ変換とは？
 
@@ -28,7 +31,7 @@
 
 正弦波は以下の式で表されます。
 
-<b align="center">正弦波の式</b>
+<b style="text-align: center;">正弦波の式</b>
 
 $$
 y(t) = A \sin(\omega t + \phi)
