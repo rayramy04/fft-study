@@ -3,6 +3,6 @@ plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 title: [Study about FFT]
-description: [Learn about the basics of Fast Fourier Transform and signal processing.]
+description: [Learn about the basics of Fast Fourier Transform and Signal Processing.]
 
 show_downloads: [https://github.com/ll-0013py/fft_study]
