@@ -40,11 +40,6 @@
   <strong>正弦波の式</strong>
 </div>
 
-<p>abc</p>
-<div>aaad</div>
-<strong>sadfa</strong>
-<b>saday</b>
-
 $$
 y(t) = A \sin(\omega t + \phi)
 $$
