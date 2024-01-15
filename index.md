@@ -36,10 +36,17 @@
   <b>正弦波の式でーす</b>
 </div>
 
+<b>ああああ</b>
+<strong>aaa</strong>
+
 <div align="center">
   <strong>太字で中央寄せされたテキスト</strong>
 </div>
 
+<p>abc</p>
+<div>aaad</div>
+<strong>sadfa</strong>
+<b>saday</b>
 
 $$
 y(t) = A \sin(\omega t + \phi)
