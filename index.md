@@ -32,15 +32,12 @@
 
 正弦波は以下の式で表されます。
 
-<div align="center">
-  <b>正弦波の式でーす</b>
+<div style="text-align: center;">
+    <strong>これは中央寄せかつ太字のテキストです。</strong>
 </div>
 
-<b>ああああ</b>
-<strong>aaa</strong>
-
 <div align="center">
-  <strong>太字で中央寄せされたテキスト</strong>
+  <strong>正弦波の式</strong>
 </div>
 
 <p>abc</p>
