@@ -1,14 +1,3 @@
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-<script type="text/x-mathjax-config">
- MathJax.Hub.Config({
- tex2jax: {
- inlineMath: [['$', '$'] ],
- displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
- }
- });
-</script>
-
 # フーリエ変換とは？
 
 ## 概要
@@ -762,3 +751,14 @@ A：大体の場合は fs=16kHz で OK！
   - 音声インターフェースの歴史やメリットデメリットについて一通り書かれている
   - 主要な TTS の仕組みについて理解することができる
   - 音声の生成プロセスが信号処理と結びついているので、一通り読んでおくと TTS 界隈の話が理解しやすい
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script>
