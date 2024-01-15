@@ -2,7 +2,7 @@ remote_theme: pages-themes/slate@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
-title: [About FFT]
+title: [Study about FFT]
 description: [Learn about the basics of Fast Fourier Transform and signal processing.]
 
 show_downloads: [https://github.com/ll-0013py/fft_study]
