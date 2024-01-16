@@ -337,12 +337,16 @@ $$
 ただ、それは理想上の話であって、コンピュータ上で常に連続したデータを扱えるとは限りませんよね。コンピュータ上で扱うようなデータは完全に連続しているわけではなく、とびとびになっている（離散データ）ことも多いです。
 
 <br>
-<div style="text-align: center">
-  <img src="data/figure/discrete_data.png" alt="離散データ">
+<div style="text-align: center;">
+  <img src="data/figure/discrete_data.png" alt="離散データ" style="display: block; margin: auto;">
 </div>
 <br>
 
 例えば上の写真を見てもらえば分かるように、一見すると連続しているような音声データも拡大してみるととびとびのデータの集合であることが分かりますね。まあ本当に連続していたら無限のデータサイズが必要になってしまうので、ある程度の所で打ち切りにする必要があるわけです。俗にいうサンプリング周期（データをサンプリングする間隔のこと）ってやつですね。
+
+<div style="text-align: center;">
+  <img src="data/figure/discrete_data.png" alt="離散データ" style="display: block; margin: auto;">
+</div>
 
 そのため、こちらの離散フーリエ変換はそういった離散的なデータでも扱えるように改良されたものになります。式としては以下のような感じになります。
 
