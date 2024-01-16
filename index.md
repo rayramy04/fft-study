@@ -85,19 +85,27 @@ $$
 
 この式を使ってみると、例えばこんな感じの波が生成されますね。 $\cos$ 波の場合でも同様にできます。
 
-![sin波](data/figure/sine_wave.png)
+<div style="text-align: center;">
+  <img src="data/figure/sine_wave.png" alt="Sin波" style="display: block; margin: auto;">
+</div>
 
 ただ、現実世界で聞こえるような音はこんなきれいな波ばかりでなく、こんな感じでごちゃごちゃなものが多いです。
 
-![複合波](data/figure/composite_wave.png)
+<div style="text-align: center;">
+  <img src="data/figure/composite_wave.png" alt="複合波" style="display: block; margin: auto;">
+</div>
 
 しかし、実は上の画像は複雑そうな波に見えますが、それを構成している成分は下の画像に見えるような 3 つの $\sin$ 波の重ね合わせでできています。
 
-![構成成分](data/figure/individual_wave.png)
+<div style="text-align: center;">
+  <img src="data/figure/individual_wave.png" alt="構成成分" style="display: block; margin: auto;">
+</div>
 
 これらの波を足し合わせることによって先ほどの波が生成されます。
 
-![波の合成](data/figure/add.png)
+<div style="text-align: center;">
+  <img src="data/figure/add.png" alt="波の合成" style="display: block; margin: auto;">
+</div>
 
 逆を言えば、どんな複雑そうに見える波であっても $\sin$ 波と $\cos$ 波の組み合わせに分解することができるのです。これがフーリエ変換です。
 
@@ -184,7 +192,7 @@ $$
 
 それと、このフーリエ級数展開は複素数を用いてもっとシンプルな形で表現することもできます。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>複素フーリエ級数</strong>
 </div>
 
@@ -211,7 +219,7 @@ $$
 
 ちなみにここで出てくる $e^{i \frac{2\pi n}{T}x}$ という部分はオイラーの等式由来のものです。オイラーの等式は数学史上もっとも美しい式、なんて言われていますね。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>オイラーの等式</strong>
 </div>
 
@@ -223,7 +231,7 @@ $$
 
 詳しい計算過程は以下の通りです。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>オイラーの等式の照明</strong>
 </div>
 
@@ -277,7 +285,7 @@ $$
 
 フーリエ変換の式としてはこんな感じになります。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>フーリエ変換</strong>
 </div>
 
@@ -296,7 +304,7 @@ $$
 
 あと、これと似たような形のものにラプラス変換というものがあります。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>ラプラス変換</strong>
 </div>
 
@@ -344,7 +352,7 @@ $$
 
 そのため、こちらの離散フーリエ変換はそういった離散的なデータでも扱えるように改良されたものになります。式としては以下のような感じになります。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>離散フーリエ変換</strong>
 </div>
 
@@ -367,7 +375,7 @@ $$
 
 以下が高速フーリエ変換の式です。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>高速フーリエ変換</strong>
 </div>
 
@@ -392,11 +400,15 @@ FFTが普通のDFTよりも高速に計算できる理由は、アルゴリズ�
 
 ちなみになんでずんだもんの音声をサンプルに用いたのかというと、単純に権利上の使い勝手が良かったからです。~~あとなんでか分からないけど最近ずんだもんの解説動画が大量にYouTubeのおすすめに出てきて困ってます~~
 
-![ずんだもん立ち絵](data/figure/zunmon002.png)
+<div style="text-align: center;">
+  <img src="data/figure/zunmon002.png" alt="ずんだもん立ち絵" style="display: block; margin: auto;">
+</div>
 
 話を戻します。そうすると、出力結果としてはこんな感じの若干デルタ関数的な周波数特性が観察できますね。
 
-![delta](data/figure/delta_nowindow.png)
+<div style="text-align: center;">
+  <img src="data/figure/delta_nowindow.png" alt="delta" style="display: block; margin: auto;">
+</div>
 
 こういうフーリエ変換関係の計算を手でやろうとするとめちゃくちゃめんどくさいんですが、実際にコンピュータ上実装する際には機械が全部やってくれるので大丈夫です。
 Python では難しいことは考えずに numpy などのライブラリを使って実行できるので。
@@ -405,19 +417,25 @@ Python では難しいことは考えずに numpy などのライブラリを使
 
 もうちょっと写真を見せてFFTのイメージを掴んでみましょう。まずはもとのずんだもんの「僕はずんだもんなのだ」という音声の波形です。
 
-![ずんだもん元ファイル](data/figure/zundamon_original.png)
+<div style="text-align: center;">
+  <img src="data/figure/zundamon_original.png" alt="ずんだもん元ファイル" style="display: block; margin: auto;">
+</div>
 
 これにFFTをかけた結果、さっきのような離散的な振幅スペクトルが出てきたのでしたよね。
 
 そして、この結果を縦軸周波数（Hz）、横軸時間（s）、色で振幅の程度を表現したものがスペクトログラムです（いわゆる声紋）。具体的には短時間フーリエ変換（SFFT：Short-Time Fourier Transform）した結果の短冊状の画像をペタペタと横の時間領域に並べたものだと思ってもらえればいいです。
 
-![ずんだもんのスペクトログラム](data/figure/zundamon_spectrogram.png)
+<div style="text-align: center;">
+  <img src="data/figure/zundamon_spectrogram.png" alt="ずんだもんのスペクトログラム" style="display: block; margin: auto;">
+</div>
 
 声紋分析なんかもこれを見ればできますね。ここで赤い線（ずんだもんの $F0$ 、声の基本周波数）が途中で途絶えているのはバグではなく、そもそもこの音声データが1秒ちょっとしかないのでそこまでしか記録できないからです。
 
 試しに、WORLD（音声分析変換合成システム）のPython用wrapperであるPyWORLDを用いて音声ファイルの $F0$ 抽出をしてみると下のような画像になりました。今回はこの[F0抽出ができるJupyter Notebook](https://drive.google.com/file/d/19RS2iKyHULLTqlTSr_SxWpk79xIEB0mx/view?usp=sharing)をGoogle Colab上に置いておいたので、興味がある人はぜひやってみてください。
 
-![ずんだもんのF0](data/figure/zundamon_f0.png)
+<div style="text-align: center;">
+  <img src="data/figure/zundamon_f0.png" alt="ずんだもんのF0" style="display: block; margin: auto;">
+</div>
 
 雑談がてら豆知識を補足すると、刑事事件などの時指紋は絶対的な証拠になるけど実は声紋は意外と人によって被ったりする部分が大きいので決定的な証拠にはならないらしいです。あとは電話で会話している時の音声も、あれは相手の声を聞いているわけではなくて何十億通りあるそれっぽい似た声を聞いているだけなようです。ちょっとビックリ。
 
@@ -425,11 +443,13 @@ Python では難しいことは考えずに numpy などのライブラリを使
 
 実際に出力してみるとこんな感じのものになります。まあ全体の周波数特性事態を見てもだから何だという話ですが、一応置いときます。
 
-![対数振幅スペクトル](data/figure/zundamon_log.png)
+<div style="text-align: center;">
+  <img src="data/figure/zundamon_log.png" alt="対数振幅スペクトル" style="display: block; margin: auto;">
+</div>
 
 具体的には、音の単位量であるデシベル（dB）の振幅は以下の式によって元の振幅と基準振幅の比率の対数で表現されます。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>振幅のデシベル表現</strong>
 </div>
 
@@ -445,7 +465,7 @@ $$
 
 フーリエ変換が時間領域のデータを周波数領域に変換することなので、もちろんその逆の動作もあり、逆フーリエ変換といいます。この逆変換により、信号の周波数スペクトルから元の連続時間信号を復元することが可能です。これは次の式で表されます。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>逆フーリエ変換</strong>
 </div>
 
@@ -531,7 +551,9 @@ $$
 
 例えば先ほどのずんだもんの音声データの 1.01 から 1.015 まで（範囲はテキトー）の間のデータを取り出して FFT をかけたいとします。すると、切り出したデータが以下のようになっていたらどうでしょう？
 
-![両端が0じゃないデータ](data/figure/separate.png)
+<div style="text-align: center;">
+  <img src="data/figure/separate.png" alt="両端が0でないデータ" style="display: block; margin: auto;">
+</div>
 
 これだと指定した範囲の開始時刻と終了時刻の両端が 0 になっていませんよね。本来きちんと 1 周期分を拾ってきたのなら、この波の両端の値は同じになるはずです。
 
@@ -545,7 +567,7 @@ $$
 
 こちらは以下のような式で表されます。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>ハミング窓</strong>
 </div>
 
@@ -563,13 +585,17 @@ $$
 
 これを先ほどのデータにかけてみましょう。するとこのように形が変化します。
 
-![ハミング窓適用後](data/figure/separate_window.png)
+<div style="text-align: center;">
+  <img src="data/figure/separate_window.png" alt="ハミング窓適用後" style="display: block; margin: auto;">
+</div>
 
 こうすると両端が自然な形で 0 になりましたね。両端が同じ値ということはこれを一周期分として認識しても差し支えなくなるので、無事 FFT が行えるというわけです。
 
 参考までに、ハミング窓をかける前とかけたあとでどのように波形が変化したかもう一度比較してみましょう。
 
-![窓関数の前後比較](data/figure/window_test.png)
+<div style="text-align: center;">
+  <img src="data/figure/window_test.png" alt="窓関数の前後比較" style="display: block; margin: auto;">
+</div>
 
 ただ、なんでもかんでも窓関数を使えばよいというわけではなくて、こちらを使うとデータの漏れ（リーク）は軽減される代わりに、データの頂点（ピーク）が低くなってしまうという欠点もあります。
 
@@ -579,11 +605,15 @@ $$
 
 下の画像は分割したデータの元の波形を青色、ここにハミング窓を適用した波形をオレンジで示しています。
 
-![窓関数の前後比較（Re）](data/figure/window_compre.png)
+<div style="text-align: center;">
+  <img src="data/figure/window_compre.png" alt="窓関数の前後比較（Re）" style="display: block; margin: auto;">
+</div>
 
 こちらを FFT をしてみるとどうなるでしょうか？振幅スペクトルの結果を比較してみましょう。
 
-![FFTの結果比較](data/figure/fft_compare.png)
+<div style="text-align: center;">
+  <img src="data/figure/fft_compare.png" alt="FFTの結果比較" style="display: block; margin: auto;">
+</div>
 
 上で述べたように、確かにリークは軽減されていますが、振幅のピークが低くなっていますね（今回の場合はちょっと影響が大きすぎたかも）。
 
@@ -591,7 +621,7 @@ $$
 
 #### よく使う窓関数の特徴まとめ
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>ハミング窓（Hamming Window）</strong>
 </div>
 
@@ -607,7 +637,7 @@ $$
 - 近接した周波数成分を持つ信号を分析、分離できるが、サイドローブが大きい代わりに振幅の小さい周波数成分を分析できない
 - パワー減少率：4.00dB
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>ハニング窓（Hanning Window）</strong>
 </div>
 
@@ -620,7 +650,7 @@ $$
 - メインローブ（主成分）の周波数分解能は高くないが、サイドローブが小さい
 - パワー減少率：4.26dB
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>矩形窓（Rectangular Window）</strong>
 </div>
 
@@ -632,7 +662,7 @@ $$
 - 比較的サイドローブが大きいため、サイドローブが積み上がりやすい
 - サイドローブが積み上がった位置に小さなレベルの周波数成分があると埋もれるが、比較的メインローブの幅が狭いため、周波数成分をより細かく分離できる
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>ブラックマン窓（Blackman Window）</strong>
 </div>
 
@@ -706,19 +736,19 @@ $$
 
 ### その他注意事項など
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>Q：振幅スペクトルを表示する際に何かすることはある？</strong>
 </div>
 
 A：FFT の結果は複素数で返ってくるので、結果に対して絶対値を付けておきましょう。Python 上で実行するなら abs()なんかを付ければいいと思います。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>Q：窓関数をかけたら曖昧な周波数特性しか把握できないけど、そんなもので人間の聴覚特性などの影響を調べられるの？</strong>
 </div>
 
 A：音声認識ではスペクトルから細かい変動を取り除く MFCC という処理を加えているので、スペクトルがデルタ関数的であることは人間の聴覚的にはあまり関係がないです。むしろ連続的で滑らかなスペクトルが適切なのでそれで大丈夫です。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>Q：そもそも波形の違いを吟味せずにフーリエ変換の結果だけから何か語れることがあるの？</strong>
 </div>
 
@@ -726,20 +756,20 @@ A：例えば音色などの影響を周波数特性から調べることがで�
 
 人間の聴覚は振幅そのものではなく対数軸上で違いを見ているので、周波数特性のほうが大事なのです。例えば、高さに関して 440Hz の 1 オクターブ下が 220Hz、その上が 880Hz、といった具合で、心理量は物理量の対数に比例して認知されます（ウェーバー・フェヒナーの法則）。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>Q：複数データを比較する際の注意事項はある？</strong>
 </div>
 
 A：特に収録時の条件が違う 2 つ以上のデータを比較する場合は藤崎(1971)の研究（藤崎博也 and 須藤寛, “日本語単語アクセントの基本周波数パタンとその生成機構のモデル,” 日本音響学会誌, vol. 27, no. 9, pp.
 445–452, 1971.）のように時間領域や周波数領域で正規化を行ってから比較することが望ましいです。高校生の時の私にはやり方が分からなかったのでそのままデータから読み取れることを比較していましたが、厳密には良くないです。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>Q：どの程度まで音色に関する影響を周波数特性で議論できるの？</strong>
 </div>
 
 A：あまり細かい音色の違いまでは分からない。フーリエ変換は人間の聴覚特性の近似としては精度が粗すぎし、窓関数をかけたことによって波形に歪みを与えているので、これらの影響のほうが本来の細かい違いよりも大きくなってしまう。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>Q：サンプリング周波数は本当に 16kHz でいいの？</strong>
 </div>
 
