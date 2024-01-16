@@ -67,7 +67,7 @@
 
 正弦波は以下の式で表されます。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>正弦波</strong>
 </div>
 
@@ -75,7 +75,7 @@ $$
 y(t) = A \sin(\omega t + \phi)
 $$
 
-- $y(t)$ は時刻 $\(t\)$ における振幅
+- $y(t)$ は時刻 $t$ における振幅
 - $A$ は振幅（波の最大変位）
 - $\omega$ は角周波数（単位時間あたりの角度の変化量。これは周期 $T$ に対して $\omega = \frac{2\pi}{T}$ と表される
 - $t$ は時間
@@ -143,7 +143,7 @@ $$
 
 ということは、です。カンいい人はもう気づいたかもしれませんが、逆を言えば、この二つの波を足し合わせればどんな波でも生成することができるというわけです。この手法はフーリエ級数展開といいます。
 
-<div align="center">
+<div align="center" style="display: block; margin: auto;">
   <strong>フーリエ級数</strong>
 </div>
 
@@ -336,17 +336,11 @@ $$
 
 ただ、それは理想上の話であって、コンピュータ上で常に連続したデータを扱えるとは限りませんよね。コンピュータ上で扱うようなデータは完全に連続しているわけではなく、とびとびになっている（離散データ）ことも多いです。
 
-<br>
 <div style="text-align: center;">
   <img src="data/figure/discrete_data.png" alt="離散データ" style="display: block; margin: auto;">
 </div>
-<br>
 
 例えば上の写真を見てもらえば分かるように、一見すると連続しているような音声データも拡大してみるととびとびのデータの集合であることが分かりますね。まあ本当に連続していたら無限のデータサイズが必要になってしまうので、ある程度の所で打ち切りにする必要があるわけです。俗にいうサンプリング周期（データをサンプリングする間隔のこと）ってやつですね。
-
-<div style="text-align: center;">
-  <img src="data/figure/discrete_data.png" alt="離散データ" style="display: block; margin: auto;">
-</div>
 
 そのため、こちらの離散フーリエ変換はそういった離散的なデータでも扱えるように改良されたものになります。式としては以下のような感じになります。
 
