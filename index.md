@@ -606,7 +606,7 @@ $$
 下の画像は分割したデータの元の波形を青色、ここにハミング窓を適用した波形をオレンジで示しています。
 
 <div style="text-align: center;">
-  <img src="data/figure/window_compre.png" alt="窓関数の前後比較（Re）" style="display: block; margin: auto;">
+  <img src="data/figure/window_compare.png" alt="窓関数の前後比較（Re）" style="display: block; margin: auto;">
 </div>
 
 こちらを FFT をしてみるとどうなるでしょうか？振幅スペクトルの結果を比較してみましょう。
