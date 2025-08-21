@@ -1,10 +1,10 @@
-# Jupyter Notebooks - Mark as documentation to exclude from language statistics
-# This keeps the educational value (outputs remain) but doesn't count toward repo language stats
-*.ipynb linguist-documentation
+# Exclude the heavy notebook with lots of outputs from language statistics
+fft_test.ipynb linguist-generated=true
 
-# Alternative: Mark as generated (if you prefer)
-# *.ipynb linguist-generated
+# Keep other notebooks (like f0_extraction.ipynb) counted normally
+# This shows Jupyter/data science skills without overwhelming the stats
 
-# You can also be more specific if needed:
-# notebooks/*.ipynb linguist-documentation
-# examples/*.ipynb linguist-documentation
+# Alternative configurations if needed:
+# *.ipynb linguist-documentation   # Mark all notebooks as documentation
+# *.ipynb linguist-language=Python  # Count all notebooks as Python
+# *.ipynb linguist-generated=true  # Exclude all notebooks from stats
