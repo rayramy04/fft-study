@@ -1,0 +1,10 @@
+# Jupyter Notebooks - Mark as documentation to exclude from language statistics
+# This keeps the educational value (outputs remain) but doesn't count toward repo language stats
+*.ipynb linguist-documentation
+
+# Alternative: Mark as generated (if you prefer)
+# *.ipynb linguist-generated
+
+# You can also be more specific if needed:
+# notebooks/*.ipynb linguist-documentation
+# examples/*.ipynb linguist-documentation
