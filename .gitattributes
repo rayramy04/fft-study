@@ -1,10 +1,2 @@
-# Exclude the heavy notebook with lots of outputs from language statistics
-fft_test.ipynb linguist-generated=true
-
-# Keep other notebooks (like f0_extraction.ipynb) counted normally
-# This shows Jupyter/data science skills without overwhelming the stats
-
-# Alternative configurations if needed:
-# *.ipynb linguist-documentation   # Mark all notebooks as documentation
-# *.ipynb linguist-language=Python  # Count all notebooks as Python
-# *.ipynb linguist-generated=true  # Exclude all notebooks from stats
+# Exclude all Jupyter notebooks from language statistics
+*.ipynb linguist-generated=true
